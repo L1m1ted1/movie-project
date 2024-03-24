@@ -1,0 +1,49 @@
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    border-radius: 20px;
+    height: 100px;
+    max-width: max-content;
+    backdrop-filter: blur(100px);
+    position: relative;
+    top: -60px;
+    left: 130px;
+}
+.dark{
+    color: snow;
+}
+.light{
+    color: #050510;
+}
+.poster img{
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.poster{
+    width: 80%;
+    margin: 80px auto 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.avatar img{
+    width: 30%;
+    border-radius: 20px;
+    margin: 0 0 0 15%;
+}
+.avatar{
+    display: flex;
+    padding-bottom: 50px;
+}
+.title{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.title h2{
+    margin-top: 60px;
+}
+

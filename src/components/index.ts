@@ -1,0 +1,6 @@
+export * from './Header'
+export * from './MovieContainer'
+export * from './PosterPreview'
+export * from './SearchComponents'
+export * from './StarsRating'
+export * from './UserInfo'

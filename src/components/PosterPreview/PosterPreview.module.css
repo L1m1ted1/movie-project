@@ -1,0 +1,10 @@
+.poster{
+    max-width: max-content;
+}
+
+.poster img {
+    border-radius: 10px;
+    margin: 10px;
+    width: 266px;
+    height: 400px;
+}

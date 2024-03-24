@@ -1,0 +1,16 @@
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("../../../../mini-react-project/public/kokosava.png");
+    background-size: cover;
+    background-position: center;
+    margin-left: 15px;
+    border: black 1px solid;
+}
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
