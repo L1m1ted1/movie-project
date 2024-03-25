@@ -3,7 +3,7 @@ import style from './ErrorPage.module.css'
 const ErrorPage = () => {
     return (
         <div>
-            404
+            <img src="../../../public/img/LostUrWay.svg" alt="Error"/>
         </div>
     );
 };

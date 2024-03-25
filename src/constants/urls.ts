@@ -3,6 +3,7 @@ const imgURL = 'https://image.tmdb.org/t/p';
 
 
 const movie = '/movie';
+const genre = '/genre'
 
 const urls = {
     movies: {
@@ -13,6 +14,9 @@ const urls = {
     },
     img: {
         base: (path: string) => `/w500/${path}`
+    },
+    genres: {
+        base: ():string => `${genre}/movie/list`
     }
 };
 
