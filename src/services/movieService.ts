@@ -6,9 +6,10 @@ import {apiService} from "./apiService";
 
 
 const movieService = {
-    getAll: (): IRes<IMovies> => apiService.get(urls.movies.base()),
+    getAll: (page: string): IRes<IMovies> => apiService.get(urls.movies.base(), {params: {page}}),
     getById: (id: number): IRes<IMovie> => apiService.get(urls.movies.byId(id)),
-    getByTitle: (params: string, page = '1'): IRes<IMovies> => apiService.get(urls.movies.searchByTitle(params), {params: {page}})
+    getByTitle: (params: string, page: string): IRes<IMovies> => apiService.get(urls.movies.searchByTitle(params), {params: {page}}),
+    getByGenres: (params: string, page: string): IRes<IMovies> => apiService.get(urls.movies.byGender(params), {params: {page}})
 };
 
 export {movieService}

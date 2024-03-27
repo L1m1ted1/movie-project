@@ -1,4 +1,4 @@
-import {IGenres} from "./genreInterface";
+import {IGenre} from "./genreInterface";
 
 export interface IMovie {
     id: number,
@@ -7,7 +7,7 @@ export interface IMovie {
     vote_average: number,
     backdrop_path: string,
     overview: string,
-    genres: IGenres [],
+    genres: IGenre [],
     release_date: number,
     spoken_languages: string
 }

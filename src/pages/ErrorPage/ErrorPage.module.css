@@ -3,7 +3,52 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.error p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.error h1{
+    margin: 0;
+}
+.error img {
+    width: 29vw;
+    margin-top: -100px;
+    margin-bottom: 30px;
+}
+.black {
+    transition: 0.5s ease;
+    background-image: url("/public/img/Background.svg");
+    color: #f5f5f8;
+}
+.white {
+    transition: 0.5s ease;
+    background-image: url("/public/img/BackgroundWhite.svg");
+    color: #0b0b23;
+}
+.error button{
+    height: 70px;
+    width: 150px;
+    border: none;
+    backdrop-filter: blur(40px);
+    border-radius: 15px;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.black button{
+    background-color: rgb(121, 108, 242);
+    color: #f5f5f8;
+}
+.light button:hover, .black button:hover{
+    height: 80px;
+    width: 160px;
+    margin-top: -10px;
+
 }

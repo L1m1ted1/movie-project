@@ -1,10 +1,10 @@
 .black {
     transition: 0.5s ease;
-    background-image: url("../../../../mini-react-project/public/Background.svg");
+    background-image: url("/public/img/Background.svg");
 }
 .white{
     transition: 0.5s ease;
-    background-image: url("../../../../mini-react-project/public/BackgroundWhite.svg");
+    background-image: url("/public/img/BackgroundWhite.svg");
 }
 .container {
     min-height: 100vh;

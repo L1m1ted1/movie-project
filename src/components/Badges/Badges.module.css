@@ -1,0 +1,9 @@
+.badges{
+    position: relative;
+    left: 12%;
+    width: 30%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+}

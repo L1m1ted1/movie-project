@@ -1,3 +1,3 @@
 export * from './apiService'
 export * from './movieService'
-export * from './genderService'
+export * from './genresService'

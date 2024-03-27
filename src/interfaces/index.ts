@@ -1,3 +1,5 @@
 export * from './genreInterface'
 export * from './movieInterface'
 export * from './moviesInterface'
+export * from './searchInterface'
+export * from './genresInterface'

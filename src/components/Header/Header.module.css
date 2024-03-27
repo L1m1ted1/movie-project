@@ -7,6 +7,12 @@
     align-items: center;
     gap: 60px;
 }
+.navBar h6 {
+    margin: 0;
+}
+.logo h4{
+    margin: 0;
+}
 .dark .logo:hover{
     filter: drop-shadow(0 0 10px rgba(235, 225, 216, 0.67));
     text-shadow: 0 0 10px rgba(233, 227, 222, 0.63);
@@ -48,5 +54,6 @@
     transition: padding 1s ease, background-color 1s ease;
     text-decoration: none;
     font-size: 30px;
-    font-variant-caps: all-petite-caps ;
+    font-variant-caps: all-petite-caps;
+
 }

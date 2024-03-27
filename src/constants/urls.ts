@@ -5,11 +5,13 @@ const imgURL = 'https://image.tmdb.org/t/p';
 const movie = '/movie';
 const genre = '/genre'
 
+
+
 const urls = {
     movies: {
         base: (): string => `/discover${movie}?language=en-US`,
         byId: (id: number): string => `${movie}/${id}`,
-        gender: (): string => `/genre${movie}/list`,
+        byGender: (params: string): string => `/discover${movie}?with_genres=${params}`,
         searchByTitle: (params: string) => `/search${movie}?query=${params}`
     },
     img: {
