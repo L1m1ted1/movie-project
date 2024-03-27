@@ -2,7 +2,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url("../../../../mini-react-project/public/kokosava.png");
+    background-image: url("/public/img/kokosava.png");
     background-size: cover;
     background-position: center;
     margin-left: 15px;

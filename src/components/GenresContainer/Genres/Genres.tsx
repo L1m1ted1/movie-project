@@ -1,8 +1,9 @@
-import {useParams, useSearchParams} from "react-router-dom";
-import {useAppDispatch, useAppSelector} from "../../../hooks";
 import {useEffect} from "react";
+import {useParams, useSearchParams} from "react-router-dom";
+
 import {movieAction} from "../../../store";
 import {MovieListCards} from "../../MovieContainer";
+import {useAppDispatch, useAppSelector} from "../../../hooks";
 
 const Genres = () => {
 

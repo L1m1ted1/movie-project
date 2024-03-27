@@ -1,8 +1,8 @@
+import {FC} from "react";
 import {useSearchParams} from "react-router-dom";
 
-import style from './Pagination.module.css'
 import {useAppSelector} from "../../hooks";
-import {FC} from "react";
+import style from './Pagination.module.css';
 
 interface IProps {
     total_pages: number
@@ -31,20 +31,19 @@ const Pagination:FC<IProps> = ({total_pages}) => {
 
     const page = query.get('page')
 
-
     return (
         <div className={style.container}>
             <div className={style.prevNext}>
                 <div className={`${style.buttons} + ${theme ? style.dark : style.light}`}>
                     <button
-                        disabled={page === '1'}
+                        disabled={!(page !== '1' && page)}
                         onClick={prev}>Back
                     </button>
                     <div className={theme ? style.dark : style.light}>
                         <p>{page}</p>
                     </div>
                     <button
-                        disabled={total_pages  ? page === `${total_pages}` : page === '500'}
+                        disabled={total_pages <= 500 ? page === `${total_pages}` : page === '500'}
                         onClick={next}>Forward
                     </button>
                 </div>

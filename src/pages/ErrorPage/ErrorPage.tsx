@@ -6,7 +6,7 @@ const ErrorPage = () => {
 
     const {theme} = useAppSelector(state => state.movies);
 
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     return (
         <div className={`${theme ? style.black : style.white} + ${style.error}`}>

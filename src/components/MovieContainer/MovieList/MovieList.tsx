@@ -1,8 +1,9 @@
-import {useSearchParams} from "react-router-dom";
-import {useAppDispatch, useAppSelector} from "../../../hooks";
-import {movieAction} from "../../../store";
 import {useEffect} from "react";
+import {useSearchParams} from "react-router-dom";
+
+import {movieAction} from "../../../store";
 import {MovieListCards} from "../MovieListCards";
+import {useAppDispatch, useAppSelector} from "../../../hooks";
 
 const MovieList = () => {
 

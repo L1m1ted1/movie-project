@@ -1,11 +1,12 @@
-import style from './MovieListCard.module.css'
 import {FC} from "react";
-import {IMovie} from "../../../interfaces";
-import {useAppDispatch, useAppSelector} from "../../../hooks";
 import {useNavigate} from "react-router-dom";
-import {PosterPreview} from "../../PosterPreview";
-import {StarsRating} from "../../StarsRating";
+
+import {IMovie} from "../../../interfaces";
 import {movieAction} from "../../../store";
+import {StarsRating} from "../../StarsRating";
+import style from './MovieListCard.module.css';
+import {PosterPreview} from "../../PosterPreview";
+import {useAppDispatch, useAppSelector} from "../../../hooks";
 
 interface IProps {
     result: IMovie,

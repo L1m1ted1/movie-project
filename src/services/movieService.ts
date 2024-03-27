@@ -1,8 +1,7 @@
-
-import {urls} from "../constants";
-import {IMovie, IMovies} from "../interfaces";
 import {IRes} from "../types";
+import {urls} from "../constants";
 import {apiService} from "./apiService";
+import {IMovie, IMovies} from "../interfaces";
 
 
 const movieService = {

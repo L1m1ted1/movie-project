@@ -1,6 +1,7 @@
-import {Rating} from "@mui/material";
-import style from './StarsRating.module.css'
 import {FC} from "react";
+import {Rating} from "@mui/material";
+
+import style from './StarsRating.module.css'
 
 interface IProps {
     rating: number

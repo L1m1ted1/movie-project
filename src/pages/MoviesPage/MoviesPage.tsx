@@ -1,10 +1,10 @@
+import {SubmitHandler, useForm} from "react-hook-form";
 import {Navigate, Outlet, useNavigate} from "react-router-dom";
 
-import {useAppDispatch, useAppSelector} from "../../hooks";
-import style from './MoviesPage.module.css';
 import {movieAction} from "../../store";
-import {SubmitHandler, useForm} from "react-hook-form";
 import {ISearch} from "../../interfaces";
+import style from './MoviesPage.module.css';
+import {useAppDispatch, useAppSelector} from "../../hooks";
 
 
 const MoviesPage = () => {

@@ -1,8 +1,9 @@
-import style from './MovieListCards.module.css'
-import {IMovie} from "../../../interfaces";
 import {FC} from "react";
+
+import {IMovie} from "../../../interfaces";
 import {Pagination} from "../../Pagination";
 import {MovieListCard} from "../MovieListCard";
+import style from './MovieListCards.module.css';
 
 interface IProps {
     results: IMovie[],

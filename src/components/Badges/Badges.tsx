@@ -1,8 +1,9 @@
-import style from './Badges.module.css'
-import Badge from '@mui/material/Badge';
 import {FC} from "react";
-import {IGenre} from "../../interfaces";
+import Badge from '@mui/material/Badge';
 
+import style from './Badges.module.css'
+import {IGenre} from "../../interfaces";
+import {Link} from "react-router-dom";
 
 interface IProps {
     genders: IGenre[]
@@ -10,11 +11,9 @@ interface IProps {
 
 const Badges:FC<IProps> = ({genders}) => {
 
-    console.log(genders)
-
     return (
         <div className={style.badges}>
-            {genders.map(genre => <Badge badgeContent={genre.name} color="primary"/>)}
+            {genders.map(genre =>  <Link to={`/genres/${genre.id}`} key={genre.id}><Badge badgeContent={genre.name} key={genre.id} color="primary"/></Link>)}
         </div>
     );
 };

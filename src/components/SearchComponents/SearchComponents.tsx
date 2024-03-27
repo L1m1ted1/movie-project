@@ -1,24 +1,21 @@
-import {Navigate, useParams, useSearchParams} from "react-router-dom";
 import {useEffect} from "react";
-import {useAppDispatch, useAppSelector} from "../../hooks";
+import {Navigate, useSearchParams} from "react-router-dom";
+
 import {movieAction} from "../../store";
 import {MovieListCards} from "../MovieContainer";
+import {useAppDispatch, useAppSelector} from "../../hooks";
 
 const SearchComponents = () => {
-
 
     const [query] = useSearchParams({page: '1'});
     const {searchParams, searchMovie} = useAppSelector(state => state.movies);
     const dispatch = useAppDispatch();
 
-    const params = useParams();
-    console.log(params.query)
-
     const page = query.get('page')
 
     useEffect(() => {
         dispatch(movieAction.getByTitle({params: searchParams, page: page}))
-    }, [searchParams, page,dispatch]);
+    }, [searchParams, page, dispatch]);
 
     return (
         <div>

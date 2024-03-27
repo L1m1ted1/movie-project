@@ -8,7 +8,6 @@ const MainLayout = () => {
 
     const {theme} = useAppSelector(state => state.movies);
 
-
     return (
         <div className={theme ? style.black : style.white}>
             <div className={style.container}>
